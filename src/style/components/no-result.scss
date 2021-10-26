@@ -1,0 +1,22 @@
+.no-result{
+  padding: 161px 214px 185px 201px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-title{
+    margin-top: 22px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #494949;
+  }
+  &-text{
+    margin-top: 6px;
+    @include regularText(400,#494949);
+    width: 260px;
+    text-align: center;
+  }
+}

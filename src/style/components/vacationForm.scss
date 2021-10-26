@@ -1,0 +1,208 @@
+.vacation-form{
+
+  width: 470px;
+  margin-left: 187px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(32, 75, 146, 0.15);
+  border-radius: 5px;
+   &-vacation{
+     margin-left: 0px;
+
+   }
+
+  &-data{
+    padding: 29px 80px 30px 30px;
+    &-date-picker{
+      display: flex;
+      margin-top: 13px;
+
+      &__component{
+        display: flex;
+        flex-direction: column;
+        &:not(:first-child){
+          margin-left: 10px;
+        }
+        input{
+          width: 140px;
+          height: 36px;
+          margin-top: 5px;
+          padding: 9px 10px 9px 10px ;
+          border: 1px solid #DAE1E8;
+          box-sizing: border-box;
+          border-radius: 4px;
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 18px;
+          color: #333D47;
+            &::-webkit-calendar-picker-indicator{
+              background-image: url("../images/calendar.png");
+            }
+
+        }
+        label{
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 18px;
+          color: #333D47;
+          span{
+            margin-left: 5px;
+            font-weight: 400;
+            color: #AFB7BF;
+          }
+        }
+      }
+    }
+    &-dropdown{
+      margin-top: 12px;
+      padding: 7px 15px 9px 6px;
+      width: 360px;
+      height: 36px;
+      @include regularText();
+      background: #FFFFFF;
+      border: 1px solid #DAE1E8;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+  }
+  &-title{
+
+
+      @include title();
+  }
+}
+.vacation-form-cover{
+  width: 470px;
+  height: 170px;
+
+  &__vacation{
+    background-image: url("../images/vacation.png");
+  }
+  &__sick{
+    background-image: url("../images/sick.png");
+  }
+  &__own{
+    background-image: url("../images/own.png");
+  }
+}
+.days-counter{
+  margin-top: -5px;
+  display: flex;
+  align-items: center;
+  .hint{
+    display: none;
+    width: 340px;
+    height: 170px;
+  }
+@include regularText();
+  &-question-mark{
+      position: relative;
+        margin-left: 9px;
+      margin-top: 6px;
+    &-hint{
+      position: absolute;
+      width: 340px;
+      height: 170px;
+      top: -183px;
+      right: -170px;
+      padding: 21px 30px 29px;
+      background: #FFFFFF;
+      box-shadow: 0px 2px 10px rgba(32, 75, 146, 0.15);
+      border-radius: 6px;
+      display: none;
+      p{
+        @include noneStandartText(400,normal,13px,20px,#333D47)
+      }
+      span{
+        @include noneStandartText(600,normal,13px,20px,#333D47);
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+    &:hover{
+      .days-counter-question-mark-hint{
+        display: block;
+      }
+
+      path{
+        stroke: #5495FF;
+      }
+      .question-svg{
+        fill: #5495FF;
+      }
+    }
+
+
+
+  }
+
+
+}
+.days-display{
+  margin-top: 3px;
+  padding: 9px 10px;
+  width: 60px;
+  height: 36px;
+  border:  1px solid #DAE1E8;
+  border-radius: 4px;
+  background: #F6F8FD;
+  @include regularText($color: #818D99 )
+}
+.vacation-form-comment{
+  margin-top: 18px;
+  h4{
+    @include regularText($weight: 600,$color: #333D47);
+  }
+  textarea{
+    margin-top: 5px;
+    width: 361px;
+    height: 80px;
+    border: 1px solid #DAE1E8;
+    border-radius: 4px;
+  }
+}
+
+.vacation-form-submit{
+  margin-top: 15PX;
+  display: flex;
+  align-items: center;
+  button{
+    width: 120px;
+    height: 36px;
+    background: #5495FF;
+    border-radius: 3px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 19px;
+  }
+  p{
+    margin-left: 81px;
+    @include regularText($color: #333333);
+    span{
+      color: #5495FF;
+      margin-left: 5px;
+    }
+  }
+}
+.warning-message{
+  margin-top: 12px;
+  margin-bottom: 24px;
+  @include regularText();
+  span{
+    font-weight: bold;
+    color: black;
+  }
+}

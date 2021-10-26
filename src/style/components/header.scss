@@ -1,0 +1,94 @@
+.header{
+  background:  #225FBF;
+  padding: 33px 0 15px;
+  border-bottom: 4px solid #1753B3;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-logo{
+
+    margin-left: 368px;
+
+  }
+  &-nav{
+    margin-left: 280px;
+    display: flex;
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: rgba(246, 248, 253, 0.3);
+    &__component{
+      &:first-child{
+
+
+      }
+      &:nth-child(2){
+
+        margin-left: 55px;
+        color: #FFFFFF;
+        position: relative;
+
+      }
+      &-underline{
+        position: absolute;
+        width: 109px;
+        height: 4px;
+        background: #5495FF;
+        border-radius: 3px;
+        left:-5px;
+        top:42px;
+      }
+    }
+
+  }
+  &-system{
+    margin-left: 260px;
+    display: flex;
+    &__component{
+      width: 30px;
+      height: 30px;
+      background-color: #1753B3;
+      border-radius: 100%;
+      &:first-child{
+        background-image: url("../images/plane.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 10px;
+      }
+      &:last-child{
+        margin-left: 30px;
+        background-image: url("../images/Vector.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+
+      }
+    }
+    &-avatar{
+      margin-left: 18px;
+      width: 124px;
+      border-radius: 23px;
+      padding: 2px;
+      display: flex;
+      align-items: center;
+      &__profile{
+        width: 28px;
+        height: 28px;
+        border-radius: 100%;
+        background-image: url("../images/annaSmith.png");
+      }
+      &__name{
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-left: 11px;
+
+      }
+    }
+  }
+}

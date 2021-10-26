@@ -1,0 +1,49 @@
+.viewers{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  &-text{
+    margin-left: 15px;
+  }
+  &-avatar{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+
+    &-one{
+      background-image: url("../images/viewers/approved.png");
+    }
+    &-three{
+        background-image: url("../images/viewers/viewer1.png");
+    }
+    &-four{
+      background-image: url("../images/viewers/viewer2.png");
+    }
+    &-five{
+      background-image: url("../images/viewers/viewer3.png");
+    }
+    &-six{
+      background-image: url("../images/viewers/viewer4.png");
+    }
+  }
+  &-status{
+    width: 300px;
+    text-transform: uppercase;
+    @include noneStandartText(600,normal,12px,17px,#AFB7BF);
+    margin-top: 30px;
+    &__first{
+      text-transform: uppercase;
+      @include noneStandartText(600,normal,12px,17px,#AFB7BF);
+      margin-top: 0px;
+    }
+
+  }
+  &-name{
+      @include regularText(600);
+    text-decoration-line: underline;
+
+  }
+  &-info{
+
+  }
+}

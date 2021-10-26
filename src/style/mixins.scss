@@ -1,0 +1,28 @@
+@mixin title(){
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.313529px;
+  color: #333D47;
+}
+
+@mixin regularText($weight: normal, $color: #333D47){
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: 13px;
+  line-height: 18px;
+  color: $color;
+  letter-spacing: -0.313529px;
+}
+@mixin noneStandartText($weight: normal, $style: normal,$size: 12px,$height: 17px, $color: #333D47, ){
+  font-family: Open Sans;
+  font-style: $style;
+  font-weight:$weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+
+}

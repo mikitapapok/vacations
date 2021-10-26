@@ -1,0 +1,21 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  list-style: none;
+  outline: 0;
+  resize:none;
+}
+
+body{
+
+  background-color: #F0F0F0;
+}
+button{
+  outline: none;
+  border: none;
+}
+#root{
+  background: #F0F0F0;
+}

@@ -1,0 +1,18 @@
+.pop-up-footer{
+  border-radius: 0px 0px 10px 10px;
+  background-color: #F6F8FD;
+  padding: 13px 0;
+  border-top: 1px solid #F1F2F7;
+  &-button-block{
+
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+    &__component{
+      &:not(:first-child){
+        margin-left: 6px;
+      }
+    }
+
+  }
+}
