@@ -1,6 +1,6 @@
 import {createSlice} from '@reduxjs/toolkit'
 
-var storage=window.sessionStorage;
+var storage=window.localStorage;
 const vacationReducer=createSlice({
         name:'vacations',
         initialState:storage.getItem("vacations")?JSON.parse(storage.getItem('vacations')):[],
@@ -11,11 +11,13 @@ const vacationReducer=createSlice({
                return newState
             },
             deleteVacation(state,action){
-
-                return state=state.filter(e=>e.id!==action.payload)
+                    const newState=state.filter(e=>e.id!==action.payload)
+                    storage.setItem("vacations",JSON.stringify(newState))
+                return newState
             },
             rewriteVacationList(state,action){
                  state=state.filter(e=>e.id!==action.payload.id)
+                 storage.setItem("vacations",JSON.stringify([...state,action.payload]))
                 return state=[...state,action.payload]
             }
 

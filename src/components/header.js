@@ -9,7 +9,7 @@ function Header(){
     }
     return(
         <header className='header'>
-            <img className='header-logo'  src={logo} alt='header-logo'/>
+            <img className='header-logo' onClick={goTo}  src={logo} alt='header-logo'/>
             <ul className='header-nav'>
                 <li className='header-nav__component'>Address Book</li>
                 <li className='header-nav__component' onClick={goTo}>
