@@ -113,6 +113,9 @@ function VacationForm(props){
         setIsTriggered(true)
     }
 
+    const getDates=()=>{
+        alert('You must pick dates of vacation')
+    }
 
     return(props.open||location.pathname==='/')?(
 
@@ -131,7 +134,7 @@ function VacationForm(props){
             <VacationCredentials eHandler={setKindHandler} kind={kind} dateHandler={dateHandlerStart}
                                  dateHandlerPlus={dateHandlerEnd} dateCount={dateCount} localPrevDate={localPrevDate} localEndDate={localEndDate} vacation={props.vacation}/>
             {location.pathname === '/' ? <div className='vacation-form-submit'>
-                <button onClick={prevDate && endDate ? finalDate : null}>SUBMIT</button>
+                <button onClick={prevDate && endDate ? finalDate : getDates}>SUBMIT</button>
                 <p>Have questions? <span>Read FAQ</span></p>
             </div> : null}
             {isTriggered === true ? <PopUp
