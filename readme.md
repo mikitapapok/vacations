@@ -1,5 +1,5 @@
 # Vacation
- This project I have made talking Frontend courses.
+ This project I have made taking Frontend courses.
 ## Tools and Libraries
  In this project I use :<br/>
     - HTML.<br/>
