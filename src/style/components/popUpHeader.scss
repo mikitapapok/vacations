@@ -1,0 +1,23 @@
+.pop-up-header{
+  padding-top: 20px;
+  padding-bottom: 18px;
+  background: #F6F8FD;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 1px solid #EDEDF0;
+  display: flex;
+  img{
+    margin-left: 9px;
+  }
+  &-name{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.385882px;
+    color: #333D47;;
+
+    padding-left: 25px;
+  }
+
+}

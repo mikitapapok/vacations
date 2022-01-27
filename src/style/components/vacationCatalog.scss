@@ -1,0 +1,51 @@
+.vacation-catalog{
+  &__component{
+    padding-right: 28px;
+    padding-bottom: 7px;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    width: 675px;
+    &-dark{
+      background-color:#F6F8FD;
+    }
+    &-info{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 14px;
+      &-dates{
+        margin: -3px;
+        margin-left: 1px;
+        display: flex;
+        @include noneStandartText(600,normal,15px,20px)
+      }
+      &-origin{
+        &-info{
+          margin-top: 5px;
+          @include noneStandartText(normal,normal,12px,17px)
+        }
+        &-approval{
+          margin-top: 5px;
+          @include noneStandartText(600,italic,12px,17px,#3FAD44)
+        }
+        &-view{
+          margin-top: 10px;
+          @include noneStandartText(600,italic,12px,17px,#AFB7BF)
+        }
+      }
+    }
+    svg{
+      margin-left: auto;
+      margin-top: 15px;
+    }
+  }
+}
+.vacation-years-sort{
+  width: 675px;
+  margin-top: 23px;
+  background-color: #5495FF;
+  @include noneStandartText(600,normal,12px,17px,#FFFFFF);
+  padding: 2px 0 3px 30px;
+
+}

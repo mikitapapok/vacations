@@ -1,0 +1,23 @@
+.confirm-button{
+    padding: 9px 15px 8px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.289412px;
+    text-transform: uppercase;
+    color: #333333;
+
+    &-blue{
+        background: #5495FF;
+        border: 1px solid #4C88E8;
+        border-radius: 3px;
+        color: #FFFFFF;
+    }
+}

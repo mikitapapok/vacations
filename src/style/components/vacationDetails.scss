@@ -1,0 +1,38 @@
+.vacation-details{
+  width: 500px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-right: 30px;
+  &-info{
+    display: flex;
+    align-items: start;
+    padding: 16px 46px 10px 27px;
+
+
+    &-text{
+      &__component{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  &-review{
+    border-top: 1px solid #F1F2F7;
+    padding: 19px 241px 15px 30px;
+
+  }
+  &-button{
+    border: none;
+    background: none;
+    @include noneStandartText(600,normal,12px,20px,#225FBF);
+
+    text-transform: uppercase;
+
+    &-blue{
+
+    }
+  }
+}
+.date-info-own{
+  width: 390px;
+}

@@ -1,0 +1,6 @@
+export const vacationMessageOne='Please confirm creating a new vacation request:'
+export const vacationMessageTwo='Would you like to confirm the request with the dates as suggested below?'
+export const alarmMessageOne = 'Please submit your request at least two weeks before the desired start date.'
+export const alarmMessageTwo='The selected interval includes only public holidays or weekend days. Please review the selected dates.'
+export const alarmMessageThree='It looks like you already have a request for the same period. Please check the dates of your request.'
+export const alarmMessageFour='We know you must be tired. But please consider shoter vacation. How about 2 weeks?'
